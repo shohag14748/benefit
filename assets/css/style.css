@@ -1,0 +1,158 @@
+@font-face {
+    font-family: Century Gothic;
+    font-weight: 700;
+    src: url(../fonts/Century-Gothic-bold.ttf);
+}
+@font-face {
+    font-family: Century Gothic;
+    font-weight: 400;
+    src: url(../fonts/Century-Gothic.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+    font-family: Century Gothic;
+}
+.benefitsAndMaterial{
+    padding: 50px 70px;
+    padding: 50px 5%;
+    position: relative;
+}
+.benefitsAndMaterial::after{
+    content: '';
+    width: 100%;
+    height: 63%;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    position: absolute;
+    background-image: url(../images/simple-smooth-fabric-textured-background.png);
+    background-size: cover;
+    background-position: center;
+}
+.benefitsAndMaterial .page_width{
+    max-width: 1300px;
+    padding: 40px;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.05);
+    background-color: #ffffff;
+}
+.benefitsAndMaterial .title{
+    text-align: center;
+    font-size: 40px;
+    line-height: 48px;
+    letter-spacing: 0em;
+    margin-bottom: 14px;
+    color: #000;
+}
+.benefitsAndMaterial .sub_title{
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0em;
+    color: #784631;
+    text-align: center;
+    margin-bottom: 22px;
+}
+.benefitsAndMaterial .des{
+    font-size: 16px;
+    line-height: 27px;
+    letter-spacing: 0em;
+    text-align: center;
+    max-width: 635px;
+    margin: 0 auto 30px;
+}
+.benefitsAndMaterial .benefits{
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+.benefitsAndMaterial .single_benefit{
+    width: 33.333%;
+    padding: 0 15px;
+    text-align: center;
+}
+.benefitsAndMaterial .single_benefit .content{
+    max-width: 320px;
+    margin: auto;
+}
+.benefitsAndMaterial .single_benefit img{
+    width: 90%;
+    max-width: 160px;
+    margin-bottom: 15px;
+}
+.benefitsAndMaterial .benefit_title{
+    font-size: 22px;
+    line-height: 26px;
+    letter-spacing: 0em;
+    margin-bottom: 15px;
+}
+.benefitsAndMaterial .benefit_des{
+    font-size: 13px;
+    line-height: 22px;
+    letter-spacing: 0em;
+}
+.icon_left,.icon_right{
+    display: none;
+}
+@media screen and (max-width:767px) {
+    .benefitsAndMaterial {
+        padding: 30px 20px;
+    }
+    .benefitsAndMaterial::after{
+        height: 76%;
+    }
+    .benefitsAndMaterial .page_width{
+        padding: 24px 18px;
+    }
+    .benefitsAndMaterial .title{
+        font-size: 22px;
+        line-height: 26px;
+    }
+    .benefitsAndMaterial .sub_title{
+        font-size: 14px;
+        line-height: 17px;
+    }
+    .benefitsAndMaterial .des{
+        font-size: 13px;
+        line-height: 22px;
+        margin-bottom: 25px;
+    }
+    .benefitsAndMaterial .single_benefit{
+        width: 100%;
+    }
+    .benefitsAndMaterial .single_benefit:not(:first-child){
+        display: none;
+    }
+    .benefitsAndMaterial .single_benefit img{
+        margin-bottom: 20px;
+        width: calc(100% - 70px);
+    }
+    .benefitsAndMaterial .benefit_title{
+        font-size: 18px;
+        line-height: 22px;
+        margin-bottom: 10px;
+    }
+    .benefitsAndMaterial .benefit_des{
+        font-size: 12px;
+        line-height: 20px;
+    }
+    .icon_left,.icon_right{
+        display: block;
+        position: absolute;
+        background: #784631;
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+        padding: 7px;
+        top: 80px;
+        transform: translateY(-50%);
+        cursor: pointer;
+    }
+    .icon_right{
+        right: 0px;
+    }
+    
+}
